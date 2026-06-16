@@ -1,0 +1,90 @@
+/* ======================================================
+   GLOBAL PAGE STYLE
+   ====================================================== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+/* ======================================================
+   MAIN APP WRAPPER (CENTERS CONTENT)
+   ====================================================== */
+.app-container {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  min-height: 100vh;
+}
+
+/* ======================================================
+   HEADER SECTION (TITLE + USER PROFILE)
+   ====================================================== */
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: start;
+  margin-bottom: 5px;
+}
+
+/* APP TITLE */
+.header h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #1f2937;
+
+  /* manual positioning adjustment */
+  transform: translateX(380px);
+  margin-top: 10px;
+}
+
+/* USER PROFILE POSITION (RIGHT SIDE) */
+.user-profile {
+  grid-column: 3;
+  justify-self: end;
+}
+
+/* ======================================================
+   CHART SECTION LAYOUT
+   ====================================================== */
+.charts-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* INDIVIDUAL CHART CARD */
+.chart-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* RESPONSIVE DESIGN FOR MOBILE */
+@media (max-width: 768px) {
+  .charts-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ======================================================
+   LOGOUT BUTTON STYLE
+   ====================================================== */
+.logout-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+
+  /* position adjustment */
+  float: right;
+  margin-top: -40px;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}

@@ -1,0 +1,33 @@
+/* SEARCH BAR */
+.search-row {                          /*Creates a horizontal layout.*/
+  display: flex;                       /*Places items in one row*/
+  justify-content: space-between;      /*Pushes left and right sections apart*/
+  align-items: center;                 /*Vertically aligns items*/
+  margin: 20px 0;                      /*Adds spacing above and below*/
+}
+
+.search-left {               /*Places dropdown and textbox side by side.[Dropdown]   [Search Box]*/
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-left select,             /*Dropdown and Search Input Styling,  Provides a clean modern look.*/
+.search-left input {
+  padding: 10px;                  /*Internal spacing*/
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.search-right button {      /*Styles the button.+ Add Expense, Blue background with white text.*/
+  background: #2563eb;
+  color: white;
+  border: none;                     /*Removes default border*/
+  padding: 10px 16px;               /*Increases button size*/
+  border-radius: 8px;
+  cursor: pointer;                  /*Hand icon on hover*/
+}
+
+.search-right button:hover {                   /*Changes button color when mouse is placed over it.*/
+  background: #1d4ed8;
+}
