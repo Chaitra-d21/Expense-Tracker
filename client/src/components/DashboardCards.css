@@ -1,0 +1,38 @@
+/*.dashboard-container is the parent container that holds all dashboard cards.*/
+.dashboard-container {
+  display: flex;  /*Makes cards appear in a row. */
+  gap: 20px;      /* Leaves 20px space between cards. */
+  margin: 20px 0;  /*Adds space above and below the card section.*/
+  flex-wrap: wrap;
+}
+
+/* Designs each individual card. */
+.card {
+  flex: 1;             /*Makes all cards take equal width.*/
+  min-width: 200px;    /*Card width should never become smaller than 200px.*/
+  padding: 20px;        /*Creates internal spacing.*/
+  border-radius: 14px;  /*Rounds the corners.*/
+  background: white;  /*Sets card color to white.*/
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08); /*Creates a soft shadow. Gives card a floating effect.*/
+  transition: 0.2s;  /*Makes animations smooth.*/
+}
+
+.card:hover {
+  transform: translateY(-4px);  /*Moves the card 4 pixels upward.*/
+}
+
+.card h4 {
+  font-size: 14px;
+  color: #6b7280;         /*Styles the heading text.*/
+}
+
+.card p {
+  font-size: 22px;
+  font-weight: bold;        /*Styles the main value. for example ₹ 5000*/
+  color: #111827;
+}
+
+/* color accents */
+.total { border-left: 5px solid #ef4444; }   /*Creates red border.*/
+.count { border-left: 5px solid #3b82f6; }   /*Blue border.*/
+.categories { border-left: 5px solid #22c55e; } /*Green border.*/

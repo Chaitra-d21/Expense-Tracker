@@ -1,0 +1,13 @@
+.chart-container {
+  width: 100%;
+  height: 300px;
+  display: flex;            /*Arrange all items neatly.*/
+  flex-direction: column;   /*Places elements vertically.*/
+  align-items: center;      /*Centers the content horizontally.*/
+}
+
+.chart-title {
+  margin-bottom: 20px;     /*Creates space between chart and header*/
+  color: #1f2937;       /*Dark gray text color.*/
+  font-size: 20px;
+}
